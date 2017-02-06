@@ -20,14 +20,17 @@ function LunchCheckController($scope) {
 	  	if($scope.totalItem == 0){
 	  		$scope.message = "Please enter data first!"
 	  		$scope.fontColor = "red";
+	  		$scope.borderColor = "red";
 	  	}
 	  	else if($scope.totalItem > 3){
 	  			$scope.message = "Too much!";
 	  			$scope.fontColor = "green";
+	  			$scope.borderColor = "green";
 	  	}
 	  	else{
 	  			$scope.message = "Enjoy!";
 	  			$scope.fontColor = "green";
+	  			$scope.borderColor = "green";
 	  	}
   			
 

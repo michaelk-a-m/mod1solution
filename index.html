@@ -16,13 +16,13 @@
 
          <div class="form-group">
              <input id="lunch-menu" type="text"
-             placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control" ng-model='lunchlist'> 
+             placeholder="list comma separated dishes you usually have for lunch. Empty item will not be counted!"
+             class="form-control" ng-model='lunchlist' ng-style="{'border-color': borderColor}"> 
          </div>
          <div class="form-group">
              <button class="btn btn-default" ng-click='startCounting();'>Check If Too Much</button>
          </div>
-         <div class="form-group message" ng-style="style={}">
+         <div class="form-group message" ng-style="{'color': fontColor}">
            <!-- Your message can go here. -->
            {{ message }}
          </div>
